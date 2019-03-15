@@ -34,12 +34,12 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'compressor',
+    'plugins.staggered_theme',
     'opal',
     'opal.core.search',
     'opal.core.pathway',
     'opal.core.referencedata',
     'staggered',
-
     'django.contrib.admin',
 ]
 
@@ -249,8 +249,8 @@ DEFAULT_DOMAIN = 'http://staggered.com/'
 
 
 # ========== PROJECT ==========
-OPAL_BRAND_NAME = 'staggered'
-VERSION_NUMBER  = '<0.0.1'
+OPAL_BRAND_NAME = 'Staggered'
+VERSION_NUMBER  = '0.1'
 
 # if you want sass, uncomment the below and gem install sass
 # COMPRESS_PRECOMPILERS = (

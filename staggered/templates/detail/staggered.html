@@ -1,0 +1,38 @@
+<h1>Custom Episode Detail template</h1>
+<h2>./detail/staggered.html</h2>
+<h2>Current Episode Stage: [[ episode.stage ]]</h2>
+
+
+<p>
+  This patient, [[ episode.getFullName() ]] has a [[ episode.stage ]] episode.
+</p>
+
+
+<div ng-show="[[ episode.stage == 'future' ]]">
+  <p>
+    This is the first of three stages.
+  </p>
+  <p>
+    To move to the next stage we <a href="/pathway/#/move-forwards/[[ episode.demographics[0].patient_id ]]/[[ episode.id ]]">click here</a>.
+  </p>
+</div>
+
+<div ng-show="[[ episode.stage == 'present' ]]">
+  <p>
+    This is the second of three stages.
+  </p>
+  <p>
+    To move to the next stage we <a href="/pathway/#/move-forwards/[[ episode.demographics[0].patient_id ]]/[[ episode.id ]]">click here</a>.
+  <p>
+    To move to the previous stage we <a href="/pathway/#/move-backwards/[[ episode.demographics[0].patient_id ]]/[[ episode.id ]]">click here</a>.
+  </p>
+</div>
+
+<div ng-show="[[ episode.stage == 'past' ]]">
+  <p>
+    This is the final stage.
+  </p>
+  <p>
+    To move to the previous stage we <a href="/pathway/#/move-backwards/[[ episode.demographics[0].patient_id ]]/[[ episode.id ]]">click here</a>.
+  </p>
+</div>

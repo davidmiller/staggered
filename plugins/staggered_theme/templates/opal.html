@@ -1,0 +1,33 @@
+{% extends 'app_layouts/layout_base.html' %}
+{% load menus %}
+
+{% block navbar %}
+{% endblock %}
+
+{% block content %}
+  <div class="col-md-2 screen-only" id="left-col">
+    <h1>
+      <a href="/#/">
+        {{ OPAL_BRAND_NAME }} <small>{{ VERSION_NUMBER }}</small>
+      </a>
+    </h1>
+    <ul class="ttu content-offset">
+      <li>
+        <a href="/#/">
+          Home
+        </a>
+      </li>
+    </ul>
+
+  </div>
+
+  <div class="col-md-10" id="center-col">
+
+    <nav class="navbar navbar-default navbar-primary navbar-fixed-top screen-only top-navbar" role="navigation">
+      <div class="container-fluid">
+        {% include 'partials/_nav_search.html' %}
+      </div><!-- /.container-fluid -->
+    </nav>
+    {{ block.super }}
+  </div>
+{% endblock %}

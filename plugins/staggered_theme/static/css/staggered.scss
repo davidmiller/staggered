@@ -1,0 +1,124 @@
+$charcoal: #373737;
+$silk    : #DCD0C0;
+$paper   : #F4F4F4;
+$palegold: #C0B283;
+
+$twocolwidth: 16.6666666667%;
+
+// Utility styles
+.ttu { text-transform: uppercase; }
+
+/* Component reskins (removal) */
+.ngProgressLiteBar {
+    display: none;
+}
+.loading {
+    display: none;
+}
+
+// General styles
+
+a,
+p a{
+    transition: none;
+    color: $charcoal;
+    font-family: 'Lato', sans-serif;
+    text-decoration: underline;
+}
+a:hover { color: darken($charcoal, 10%); }
+
+h1,h2,h3,h4,h5 {
+    color: $palegold;
+    font-family: 'Cinzo', serif;
+    text-transform: uppercase;
+}
+
+label {
+    font-family: 'Cinzo', serif;
+    text-transform: uppercase;
+}
+
+.btn {
+    font-family: 'Cinzo', serif;
+    text-transform: uppercase;
+}
+
+p { font-size: 16px; }
+
+.panel.panel-primary {
+    border-color: $charcoal;
+}
+
+.panel.panel-primary .panel-heading {
+    background: $charcoal;
+    color: $paper;
+    text-align: center;
+}
+
+.btn-primary{
+    background-color: $palegold;
+    border-color: $palegold;
+}
+
+.btn-primary:hover,
+.btn-primary:focus{
+    background-color: darken($palegold, 20%);
+    border-color: darken($palegold, 30%);
+}
+
+
+//  Left column menu
+#left-col {
+    height: 100%;
+    max-width: 300px;
+    background: $silk;
+    position: fixed;
+}
+
+#left-col h1,
+#left-col h1 small,
+#left-col h1 a,
+#left-col ul li a{
+    color: $charcoal;
+    text-decoration: none;
+}
+#left-col h1,
+#left-col h1 a  {
+    font-size: 18px;
+}
+
+
+// Main content
+
+#center-col {
+    margin-left: $twocolwidth;
+    background:  $paper;
+}
+
+
+@media (min-width: 1200px){
+  .container {
+      // Why doesn't this accept $twocolwidth ?
+      width: calc(1170px - 16.6666666667%);
+  }
+}
+
+
+.navbar {
+  height: 50px;
+}
+.navbar-fixed-top {
+    left: 230px;
+}
+.top-navbar {
+    border-bottom: 1px solid $charcoal;
+    left: auto;
+    right: 0px;
+    width: 83.33333333333%;
+    z-index: 1000;
+}
+
+.outer-container {
+    height: initial;
+    min-height: calc(100vh - 64px);
+}

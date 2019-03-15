@@ -1,0 +1,11 @@
+{% load forms %}
+<div class="row">
+  <div class="col-md-4 col-md-offset-1">
+    {% input autofocus field="Demographics.first_name" style="vertical"%}
+    {% input field="Demographics.surname" style="vertical" %}
+  </div>
+  <div class="col-md-4 col-md-offset-1">
+    {% date_of_birth_field style="vertical" %}
+    {% select field="Demographics.sex" style="vertical" %}
+  </div>
+</div>

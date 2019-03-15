@@ -1,0 +1,95 @@
+.ttu {
+  text-transform: uppercase; }
+
+/* Component reskins (removal) */
+.ngProgressLiteBar {
+  display: none; }
+
+.loading {
+  display: none; }
+
+a,
+p a {
+  transition: none;
+  color: #373737;
+  font-family: 'Lato', sans-serif;
+  text-decoration: underline; }
+
+a:hover {
+  color: #1e1e1e; }
+
+h1, h2, h3, h4, h5 {
+  color: #C0B283;
+  font-family: 'Cinzo', serif;
+  text-transform: uppercase; }
+
+label {
+  font-family: 'Cinzo', serif;
+  text-transform: uppercase; }
+
+.btn {
+  font-family: 'Cinzo', serif;
+  text-transform: uppercase; }
+
+p {
+  font-size: 16px; }
+
+.panel.panel-primary {
+  border-color: #373737; }
+
+.panel.panel-primary .panel-heading {
+  background: #373737;
+  color: #F4F4F4;
+  text-align: center; }
+
+.btn-primary {
+  background-color: #C0B283;
+  border-color: #C0B283; }
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #93824a;
+  border-color: #716439; }
+
+#left-col {
+  height: 100%;
+  max-width: 300px;
+  background: #DCD0C0;
+  position: fixed; }
+
+#left-col h1,
+#left-col h1 small,
+#left-col h1 a,
+#left-col ul li a {
+  color: #373737;
+  text-decoration: none; }
+
+#left-col h1,
+#left-col h1 a {
+  font-size: 18px; }
+
+#center-col {
+  margin-left: 16.6666666667%;
+  background: #F4F4F4; }
+
+@media (min-width: 1200px) {
+  .container {
+    width: calc(1170px - 16.6666666667%); } }
+.navbar {
+  height: 50px; }
+
+.navbar-fixed-top {
+  left: 230px; }
+
+.top-navbar {
+  border-bottom: 1px solid #373737;
+  left: auto;
+  right: 0px;
+  width: 83.33333333333%;
+  z-index: 1000; }
+
+.outer-container {
+  height: initial;
+  min-height: calc(100vh - 64px); }
+
+/*# sourceMappingURL=staggered.css.map */
