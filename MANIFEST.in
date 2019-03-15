@@ -1,0 +1,3 @@
+recursive-include staggered/static *
+recursive-include staggered/assets *
+recursive-include staggered/templates *
